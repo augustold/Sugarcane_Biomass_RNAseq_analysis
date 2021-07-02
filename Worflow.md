@@ -1,6 +1,6 @@
 # Workflow
 
-1. Working directory setup
+## 1. Working directory setup
 
 ```
 @143.107.54.134
@@ -16,7 +16,7 @@ mkdir R570 SP80-3280 AP85-441
 /projects/augustold/fastq/
 ```
 
-## Conda enviroment setup
+## 2. Conda enviroment setup
 
 ```
 # Creaye enviroment
@@ -28,7 +28,7 @@ conda install -c bioconda hisat2
 conda install -c bioconda stringtie
 ```
 
-2. Build genome index
+## 3. Build genome index
 ```
 # AP85-441
 #screen
@@ -55,7 +55,7 @@ cd hisat2_index
 hisat2-build -p 20 /projects/augustold/CSHL/Saccharum_genome_refs/R570/single_tiling_path_assembly.fna hisat2_index
 ```
 
-3. Map RNAseq samples
+## 4. Map RNAseq samples
 
 ```
 # AP85-441
