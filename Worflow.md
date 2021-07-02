@@ -32,7 +32,7 @@ conda install -c bioconda stringtie
 ```
 # AP85-441
 #screen
-#conda activate hisat2
+conda activate hisat2
 cd /projects/augustold/CSHL/Saccharum_genome_refs/Sspon
 mkdir hisat2_index
 cd hisat2_index
@@ -40,7 +40,7 @@ hisat2-build -p 40 /projects/augustold/CSHL/Saccharum_genome_refs/Sspon/Sspon.Hi
 
 # SP80-3280
 #screen
-#conda activate hisat2
+conda activate hisat2
 cd /projects/augustold/CSHL/Saccharum_genome_refs/R570
 mkdir hisat2_index
 cd hisat2_index
@@ -48,7 +48,7 @@ hisat2-build -p 20 /projects/augustold/CSHL/Saccharum_genome_refs/SP803280/sc.ml
 
 # R570
 #screen
-#conda activate hisat2
+conda activate hisat2
 cd /projects/augustold/CSHL/Saccharum_genome_refs/R570
 mkdir hisat2_index
 cd hisat2_index
@@ -60,7 +60,7 @@ hisat2-build -p 20 /projects/augustold/CSHL/Saccharum_genome_refs/R570/single_ti
 ```
 # AP85-441
 #screen
-#cd /projects/augustold/CSHL/Hisat2_map_stats/AP85-441
+cd /projects/augustold/CSHL/Hisat2_map_stats/AP85-441
 conda activate hisat2
 
 for SAMPLE in $(ls /projects/augustold/fastq/ | sed s/_[12].fq.gz// | sort -u); do
@@ -79,7 +79,7 @@ done
 
 # SP80-3280
 #screen
-#cd /projects/augustold/CSHL/Hisat2_map_stats/SP80-3280
+cd /projects/augustold/CSHL/Hisat2_map_stats/SP80-3280
 conda activate hisat2
 
 for SAMPLE in $(ls /projects/augustold/fastq/ | sed s/_[12].fq.gz// | sort -u); do
@@ -98,7 +98,7 @@ done
 
 # R570 (keep only "summary_sample.txt" files)
 #screen
-#cd /projects/augustold/CSHL/Hisat2_map_stats/R570
+cd /projects/augustold/CSHL/Hisat2_map_stats/R570
 conda activate hisat2
 
 for SAMPLE in $(ls /projects/augustold/fastq/ | sed s/_[12].fq.gz// | sort -u); do
